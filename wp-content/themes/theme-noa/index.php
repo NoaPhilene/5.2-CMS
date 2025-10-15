@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+Home Pagina template
 <div id="content">
     <?php
     if ( have_posts() ) :
