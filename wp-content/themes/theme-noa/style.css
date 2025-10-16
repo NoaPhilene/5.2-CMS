@@ -60,6 +60,7 @@ header nav ul {
     align-items: center;
     padding: 20px;
     font-family: 'MinecraftTen';
+    letter-spacing: 1px;
 }
 
 #UpdateTitleBeschrijving {
