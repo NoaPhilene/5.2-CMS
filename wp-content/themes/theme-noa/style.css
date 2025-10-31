@@ -89,6 +89,7 @@ header nav ul {
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
+    align-items: center;
     font-family: 'MinecraftTen';
     letter-spacing: 1px;
     padding: 50px;
@@ -117,17 +118,99 @@ header nav ul {
     height: auto;
 }
 
+#VariantenBox {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    background-color: #444444;
+    border: 7px solid #000000;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+}
+
+#VarianteContainer {
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+#KopjeMobDrops {
+    background-color: #444444;
+    border: 7px solid #000000;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#DeadDropsContainer {
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+#ExtraDropsContainer p {
+    padding: 10px;
+}
+
+#DeadDrops {
+    background-color: #444444;
+    border: 7px solid #000000;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ExtraDropsBox {
+    background-color: #444444;
+    border: 7px solid #000000;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ExtraDrops {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+#FoodBox {
+    background-color: #444444;
+    border: 7px solid #000000;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#FoodBoxContainer {
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+#SpawnBiomesBox {
+    background-color: #444444;
+    border: 7px solid #000000;
+    border-radius: 10px;
+    padding: 30px;
+    width: auto;
+}
+
 /* eind minecraft mob singel */
-
-.mob-variant-slider .slide {
-    text-align: center;
-}
-
-.mob-variant-slider .slide img {
-    max-width: 100%;
-    height: auto;
-}
-
-.mob-variant-slider .slide-info {
-    margin-top: 10px;
-}
