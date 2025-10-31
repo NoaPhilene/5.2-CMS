@@ -6,7 +6,7 @@
             ?>
 
             <img src="<?php echo get_field('banner')['url'] ?>">
-            <h2><?php the_title(); ?></h2>
+            <h1><?php the_title(); ?></h1>
 
             <div id="UpdateTitleBeschrijving"><?php the_content(); ?></div>
             <p>Versie nummer: <?php echo get_field('versie_nummer'); ?><p>

@@ -5,9 +5,12 @@
         while ( have_posts() ) : the_post();
             ?>
 
-            <img src="<?php echo get_field('mob_foto')['url'] ?>">
-            <h2><?php the_title(); ?></h2>
-             <p>Gepubliceerde datum: <?php echo get_field('gepubliceerde_datum'); ?><p>
+            <div id="IntroMinecraftMob">
+                <img src="<?php echo get_field('mob_foto')['url'] ?>">
+                <h1><?php echo get_field('mob_name'); ?></h1>
+                <div id="UpdateTitleBeschrijving"><?php the_content(); ?></div>
+                <p>Gepubliceerde datum: <?php echo get_field('gepubliceerde_datum'); ?><p>
+            </div>
 
             <?php if( have_rows('mob_varianten') ) : 
 
@@ -55,8 +58,17 @@
                 <?php endwhile; ?>
             <?php endif; ?>
 
-            <p>tameable? <?php echo get_field('is_it_tameable'); ?><p>
-            <p>biomes where they spawns <?php echo get_field('spawn_biome'); ?><p>
+            <p>tameable? <?php echo get_field('is_it_tameable'); ?></p>
+
+            <?php if ($spawn_biomes = get_field('spawn_biome')) : ?>
+                <?php foreach ( $spawn_biomes as $biome ) : ?>
+                    <li><?php echo esc_html($biome); ?></li>
+                <?php endforeach; ?>
+            <?php endif; ?>
+
+            <p>Health points: <?php echo get_field('mob_health_points'); ?></p>
+                
+            <p>Behavior: <?php echo get_field('behavior'); ?></p>
 
             <?php 
         endwhile;

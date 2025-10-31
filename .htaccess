@@ -14,3 +14,7 @@ RewriteRule . /wptest01/index.php [L]
 </IfModule>
 
 # END WordPress
+<FilesMatch "^slideshow\.log$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
