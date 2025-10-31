@@ -31,8 +31,8 @@
                 <?php endwhile; ?>
             <?php else : ?> 
                 <p>Geen toegevoegde functies gevonden</p>
-            <?php endif; ?>
-            <?php
+            <?php endif; 
+            
         endwhile;
     else :
         echo '<p>Geen berichten gevonden.</p>';
