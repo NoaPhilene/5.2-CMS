@@ -20,6 +20,11 @@ function customize_site_plugin_menu() {
 }
 add_action('admin_menu', 'customize_site_plugin_menu');
 
+function customize_site_plugin_clear_cache($old_value, $value, $option_name) {
+    wp_cache_clear_cache();
+}
+add_action('update_option', 'customize_site_plugin_clear_cache', 10, 3);
+
 // Functie om de inhoud van de instellingenpagina te tonen
 function customize_site_plugin_instellingen_pagina() {
     ?>
@@ -29,6 +34,12 @@ function customize_site_plugin_instellingen_pagina() {
             <?php
             settings_fields('customize_site_plugin_options_group');
             ?>
+            <label for="customize_site_plugin_hero_title">Hero Titel Text:</label>
+            <input type="text" id="customize_site_plugin_hero_title" name="customize_site_plugin_hero_title" value="<?php echo get_option('customize_site_plugin_hero_title'); ?>">
+            <br>
+            <label for="customize_site_plugin_hero_description">Hero Beschrijving Text:</label>
+            <input type="text" id="customize_site_plugin_hero_description" name="customize_site_plugin_hero_description" value="<?php echo get_option('customize_site_plugin_hero_description'); ?>">
+            <br>
             <label for="customize_site_plugin_footer">Footer Text:</label>
             <input type="text" id="customize_site_plugin_footer" name="customize_site_plugin_footer" value="<?php echo get_option('customize_site_plugin_footer'); ?>">
             <?php
@@ -41,6 +52,8 @@ function customize_site_plugin_instellingen_pagina() {
 
 // Registreren van instellingen
 function customize_site_plugin_register_settings() {
+    register_setting('customize_site_plugin_options_group', 'customize_site_plugin_hero_title');
+    register_setting('customize_site_plugin_options_group', 'customize_site_plugin_hero_description');
     register_setting('customize_site_plugin_options_group', 'customize_site_plugin_footer');
 }
 add_action('admin_init', 'customize_site_plugin_register_settings');

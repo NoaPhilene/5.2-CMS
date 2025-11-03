@@ -44,10 +44,101 @@ p {
     font-weight: normal;
 }
 
-#content {
-    background-color: #313131;
+/* begin index pagina */
+#index-page .hero {
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
 }
 
+#index-page .hero .text {
+    max-width: 900px;
+}
+
+#index-page .updates-container,
+#index-page .mobs-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#index-page .updates,
+#index-page .mobs {
+    margin-bottom: 20px;
+}
+
+#index-page .updates h2,
+#index-page .mobs h2 {
+    margin-top: 25px;
+    font-size: 28px;
+    text-align: center;
+}
+
+#index-page .updates .update,
+#index-page .mobs .mob {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 300px;
+    color: #000;
+    text-decoration: none;
+    border: solid #000;
+    border-radius: 10px;
+}
+
+#index-page .mobs .mob {
+    min-height: 400px;
+}
+
+
+#index-page .updates .update img,
+#index-page .mobs .mob img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#index-page .mobs .mob img {
+    max-width: 90%;
+}
+
+#index-page .updates .update .info,
+#index-page .mobs .mob .info {
+    flex: 1;
+}
+
+#index-page .mobs .mob .info {
+    max-height: 150px;
+}
+
+#index-page .updates .update .info .title,
+#index-page .mobs .mob .info .title {
+    font-size: 36px;
+    color: #195d33;
+}
+
+#index-page .updates .update .info .version_number,
+#index-page .mobs .mob .info .gepubliceerde_datum {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* einde index pagina */
 
 /* begin minecraft update singel */
 
@@ -229,7 +320,7 @@ header nav ul {
     padding: 20px;
 }
 
-#link-box {
+#MinecraftMobArchive #link-box {
     background-color: #444444;
     color: white;
     border: 7px solid #000000;
@@ -243,7 +334,7 @@ header nav ul {
     align-items: center;
 }
 
-#linkjes-container {
+#MinecraftMobArchive #linkjes-container {
     display: flex;
     gap: 10px;
     padding-top: 10px;
@@ -252,13 +343,78 @@ header nav ul {
     justify-content: center;
 }
 
-#linkjes-container a {
+#MinecraftMobArchive #linkjes-container a {
     text-decoration: none;
     color: #432018;
     display: inline-block;
     transition: transform 0.2s ease-in-out;
 }
 
+/* einde minecraft mob archive */
 
+/* begin minecraft updates archive */
+#MinecraftUpdatesArchive {
+    background-color: #313131;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+#MinecraftUpdatesArchive #link-box {
+    background-color: #444444;
+    color: white;
+    border: 7px solid #000000;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#MinecraftUpdatesArchive #link-box img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+#MinecraftUpdatesArchive #linkjes-container {
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#MinecraftUpdatesArchive #linkjes-container a {
+    text-decoration: none;
+    color: #432018;
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+}
 
 /* einde minecraft mob archive */
+
+
+@media (max-width: 992px) {
+
+    /* start index pagina */
+    #index-page .updates-container,
+    #index-page .mobs-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* einde index pagina */
+}
+
+@media (max-width: 600px) {
+
+    #index-page .updates-container,
+    #index-page .mobs-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
