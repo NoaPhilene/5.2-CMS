@@ -44,6 +44,10 @@ p {
     font-weight: normal;
 }
 
+#content {
+    background-color: #313131;
+}
+
 
 /* begin minecraft update singel */
 
@@ -135,6 +139,7 @@ header nav ul {
     padding-top: 10px;
     padding-bottom: 20px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 #KopjeMobDrops {
@@ -214,3 +219,46 @@ header nav ul {
 }
 
 /* eind minecraft mob singel */
+
+/* begin minecraft mob archive */
+#MinecraftMobArchive {
+    background-color: #313131;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+#link-box {
+    background-color: #444444;
+    color: white;
+    border: 7px solid #000000;
+    border-radius: 10px;
+    padding: 20px;
+    width: 150px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#linkjes-container {
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#linkjes-container a {
+    text-decoration: none;
+    color: #432018;
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+}
+
+
+
+/* einde minecraft mob archive */

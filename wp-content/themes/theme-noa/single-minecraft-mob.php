@@ -45,7 +45,7 @@
                 
                 <?php if ( !empty($mob_drops['on_dead']) ) : ?>
 
-                    <h2>Drops bij dood:</h2>
+                    <h2>Dead Drops:</h2>
 
                     <div id = "DeadDropsContainer">
                         <?php foreach ( $mob_drops['on_dead'] as $drop ) : ?>

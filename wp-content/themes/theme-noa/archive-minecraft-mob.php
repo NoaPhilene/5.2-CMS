@@ -1,17 +1,19 @@
 <?php get_header(); ?>
-<div id="content">
-    <?php
-    if ( have_posts() ) :
-        while ( have_posts() ) : the_post();
-            ?>
-            <h2>
+<div id="MinecraftMobArchive">
+    <?php if ( have_posts() ) : ?>
+        <div id="linkjes-container">
+            <?php while ( have_posts() ) : the_post(); ?>
                 <a href="<?php the_permalink(); ?>">
-                <?php the_title(); ?>
+                    <div id="link-box">
+                        <img src="<?php echo get_field('mob_foto')['url'] ?>">
+                        <h2>
+                            <?php echo get_field('mob_name'); ?>
+                        </h2>
+                    </div>
                 </a>
-            </h2>
-            <?php
-        endwhile;
-    else :
+            <?php endwhile; ?>
+        </div>
+    <?php else :
         echo '<p>Geen berichten gevonden.</p>';
     endif;
     ?>
