@@ -1,3 +1,0 @@
-Nov 03 2025 21:43:36
-{"Number":2,"Message":"rmdir(C:\\xampp\\htdocs\\wptest01\\wp-content\\cache\\autoptimize\/css): Directory not empty","File":"C:\\xampp\\htdocs\\wptest01\\wp-content\\plugins\\wp-super-cache\\wp-cache-phase2.php","Line":2698}
-

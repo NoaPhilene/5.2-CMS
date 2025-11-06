@@ -5,7 +5,7 @@ Dit project bevat een **volledige WordPress-installatie** met zorgvuldig gekozen
 De volledige site kan eenvoudig worden hersteld via een **All-in-One WP Migration-back-upbestand (.wpress)**.  
 
 **Back-up downloaden:**  
-[https://files.tomtiedemann.com/api/public/dl/MzjxMbUx/backupfile.wpress](https://files.tomtiedemann.com/api/public/dl/MzjxMbUx/backupfile.wpress)
+[https://files.tomtiedemann.com/api/public/dl/jzSPfU1L/backupfile.wpress](https://files.tomtiedemann.com/api/public/dl/jzSPfU1L/backupfile.wpress)
 
 ---
 
@@ -33,7 +33,7 @@ Download de laatste versie van [wordpress.org](https://wordpress.org/download/) 
 
 #### Stap 3 — Importeer de back-up  
 1. Download het back-upbestand:  
-   [https://files.tomtiedemann.com/api/public/dl/MzjxMbUx/backupfile.wpress](https://files.tomtiedemann.com/api/public/dl/MzjxMbUx/backupfile.wpress)  
+   [https://files.tomtiedemann.com/api/public/dl/jzSPfU1L/backupfile.wpress](https://files.tomtiedemann.com/api/public/dl/jzSPfU1L/backupfile.wpress)  
 2. Ga in WordPress naar **All-in-One WP Migration → Importeren**.  
 3. Upload het bestand `backupfile.wpress`.  
 4. Bevestig het overschrijven van bestaande data wanneer hierom gevraagd wordt.
